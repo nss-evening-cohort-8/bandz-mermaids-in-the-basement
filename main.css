@@ -1,0 +1,15 @@
+
+
+/* CSS for Tour Page */
+
+.tour__h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px #3af007;
+}
+
+.tour__domdiv {
+    flex: 100%;
+    flex-direction: column;
+    height: 600px;
+}

@@ -2,37 +2,37 @@ let band = [
   {
     name: 'Aegaeon',
     image: 'https://orig00.deviantart.net/ab4b/f/2013/126/1/a/merman_by_annemaria48-d642or4.jpg',
-    bio: 'blah, blah, blah'
+    bio: "Aegaeon sings loudly and proudly. He couldn't hit the key of the song if he tried, but DAY-UM, he's a looker. In his spare time Aegaeon enjoys long walks on the beach."
   },
 
   {
     name: 'Ladon',
     image: 'https://i.pinimg.com/originals/16/3d/95/163d95f8b269f47ee0cfca91934dff57.jpg',
-    bio: 'blah, blah, blah'
+    bio: "Ladon plays bass. It's a good thing that a bass only has 4 strings, played one at a time, because Ladon is dumber than a box of rocks. In his spare time, Ladon enjoys long walks on the beach."
   },
 
   {
     name: 'Nereus',
     image: 'https://cache.desktopnexus.com/thumbseg/458/458642-bigthumbnail.jpg',
-    bio: 'blah, blah, blah'
+    bio: "Nereus plays pan flute. He plays it poorly, but his mom's house has a basement were we can rehearse. In his spare time, Nereus enjoys long walks on the beach."
   },
 
   {
     name: 'Pan',
     image: 'https://i.warosu.org/data/tg/img/0294/29/1389487235150.png',
-    bio: 'blah, blah, blah'
+    bio: 'Pan plays guitar. Loudly. Sometimes, when the spirit moves him, he smashes said guitar. In his spare time, Pan enjoys long walks on the beach.'
   },
 
   {
     name: 'Triton',
     image: 'https://ssl.c.photoshelter.com/img-get2/I0000Xu80bDWLL6c/fit=1000x750/Project-Mermaids-78.jpg',
-    bio: 'blah, blah, blah'
+    bio: 'Triton is our keys player. His favortie piece is chopsticks. In his spare time, Triton enjoys long walks on the beach.'
   },
 
   {
     name: 'Proteus',
     image: 'http://mysticinvestigations.com/paranormal/wp-content/uploads/2013/08/merman1.jpg',
-    bio: 'blah, blah, blah'
+    bio: "Proteus plays drums. Because he plays drums, we can't call him a musician, but we're glad he's in the band. In his spare time, Proteus enjoys long walks on the beach."
   }
 ];
 

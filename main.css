@@ -1,3 +1,14 @@
+body {
+       display: flex;
+       flex-direction: column; 
+       min-height: 50vh;  
+}
+#container{
+    margin:20px;  
+    flex: 1;  
+    display: flex;
+    flex-direction: row;
+}
 .navigation {
     display: flex;
     flex-wrap: wrap;
@@ -12,4 +23,15 @@
 }
 .navul li {
     
+}
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer_img{
+    max-width: 30px;
+    max-height: 30px;
+    margin: 5px;
 }

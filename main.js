@@ -7,17 +7,17 @@ const albums = [
   {
     title: "Neptune & The Vainy-Armed Apprentice",
     image: "https://www.squidge.org/~mrs_fish/fakes/xf/fantasy/mermen-warriors.jpg",
-    songs: ["Song1", "Song2", "Song3"]
+    songs: ["Why Are Your Arms So Vainy?", "Vains Thicker Than My Mane", "Big Vain, Little Fin"]
   },
   {
-    title: "Album",
-    image: "https://i.pinimg.com/originals/88/7a/1a/887a1a4810b4327d7795963e1c183ab1.jpg",
-    songs: ["Song4", "Song5", "Song6"]
+    title: "New Trident, Who Dis?",
+    image: "https://cdnb.artstation.com/p/assets/images/images/000/190/297/large/hyoung-nam-poseidon-adv-06.jpg?1409732838",
+    songs: ["I AM THE SEA", "Holy Mack-erel", "Sleeping With the Fishes"]
   },
   {
-    title: "Album",
-    image: "https://img.fireden.net/tg/image/1517/62/1517621326053.jpg",
-    songs: ["Song7", "Song8", "Song9"]
+    title: "Underwater Paradise",
+    image: "https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg",
+    songs: ["Golden Submarine", "Under the Sea", "Flood Mansion Dreams"]
   }
 ];
 

@@ -56,4 +56,4 @@ const printToDom = (stringToPrint, divId) => {
       printToDom(newString, 'bio__card');
     };
 
-createBandCards();   
+createBandCards();

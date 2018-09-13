@@ -1,3 +1,16 @@
-body {
-    background-color: aquamarine;
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navul {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navul li {
+    
 }

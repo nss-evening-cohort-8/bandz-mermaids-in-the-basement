@@ -1,3 +1,5 @@
+/* JS for Members/Band Page */
+
 let band = [
   {
     name: 'Aegaeon',
@@ -36,13 +38,11 @@ let band = [
   }
 ];
 
-
 const printToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML += stringToPrint;
   };
 
-<<<<<<< HEAD
 /* JS for Tour Page */
 
   // const TOUR = {
@@ -57,7 +57,7 @@ const printToDom = (stringToPrint, divId) => {
   //   Time: “1800 hrs PST”
   // }
 
-=======
+
 const albums = [
   {
     title: "Neptune & The Vainy-Armed Apprentice",
@@ -87,7 +87,7 @@ const albumBuilder = () => {
         newString += `Image: <img src=${albums[i].image}><br>`;
         newString += `Songs: ${albums[i].songs}<br>`;
         newString += `</div><br>`;
-      }else{
+      } else {
         newString += `<div class="odd">`;
         newString += `Title: ${albums[i].title}<br>`;
         newString += `Image: <img src=${albums[i].image}><br>`;
@@ -96,12 +96,12 @@ const albumBuilder = () => {
       }
     }
     printToDom(newString, 'test')
-}
+};
 
-albumBuilder();
->>>>>>> master
-  const createBandCards = () => {
-    let newString = ''
+// albumBuilder();
+
+const createBandCards = () => {
+  let newString = ''
     for (let i = 0; i < band.length; i++) {
         newString += `<div class="member">`
           newString += `<h4>${band[i].name}</h4>`

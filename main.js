@@ -8,6 +8,7 @@ const printToDom = (stringToPrint, divId) => {
 
 
 
+
   /* JS for Tour Page */
 
   // const TOUR = {

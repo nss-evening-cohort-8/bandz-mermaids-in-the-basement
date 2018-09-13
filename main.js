@@ -10,14 +10,14 @@ const printToDom = (stringToPrint, divId) => {
 
   /* JS for Tour Page */
 
-  const TOUR = {
-    Date: ‘Sept.7.2018”,
-    City: “San Francisco”,
-    Venue: “Golden Gate Park”,
-    Time: “1800 hrs PST”
-  } {
-    Date: ‘Sept.7.2018”,
-    City: “San Francisco”,
-    Venue: “Golden Gate Park”,
-    Time: “1800 hrs PST”
-  }
+  // const TOUR = {
+  //   Date: ‘Sept.7.2018”,
+  //   City: “San Francisco”,
+  //   Venue: “Golden Gate Park”,
+  //   Time: “1800 hrs PST”
+  // } {
+  //   Date: ‘Sept.7.2018”,
+  //   City: “San Francisco”,
+  //   Venue: “Golden Gate Park”,
+  //   Time: “1800 hrs PST”
+  // }

@@ -55,8 +55,12 @@ const albums = [
 ];
 
 const printToDom = (stringToPrint, divId) => {
-  const selectedDiv = document.getElementById(divId);
-  selectedDiv.innerHTML += stringToPrint;
+  let selectedDiv = document.getElementById(divId);
+  if (selectedDiv !== null) {
+    selectedDiv.innerHTML += stringToPrint;
+  } else {
+    
+  }  
 };
 
 const albumBuilder = () => {

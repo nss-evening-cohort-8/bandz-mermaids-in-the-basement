@@ -5,7 +5,7 @@ const printToDom = (stringToPrint, divId) => {
 
 const albums = [
   {
-    title: "Album",
+    title: "Neptune & The Vainy-Armed Apprentice",
     image: "https://www.squidge.org/~mrs_fish/fakes/xf/fantasy/mermen-warriors.jpg",
     songs: ["Song1", "Song2", "Song3"]
   },

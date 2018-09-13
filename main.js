@@ -79,7 +79,7 @@ const albumBuilder = () => {
         newString += `</div><br>`;
       }
     }
-    printToDom(newString, 'test')
+    printToDom(newString, 'discography')
 }
 
 albumBuilder();

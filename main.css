@@ -3,7 +3,7 @@ body {
        flex-direction: column; 
        min-height: 50vh;  
 }
-#container{
+#pageContent{
     margin:20px;  
     flex: 1;  
     display: flex;
@@ -22,9 +22,11 @@ body {
     flex-direction: row;
     justify-content: flex-end;
 }
-.navul li {
-    
+.band_title {
+    margin:auto;
+    font-family: 'Oswald', sans-serif;
 }
+    
 #footer {
     display: flex;
     flex-wrap: wrap;

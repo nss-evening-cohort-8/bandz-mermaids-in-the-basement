@@ -36,12 +36,6 @@ let band = [
   }
 ];
 
-
-const printToDom = (stringToPrint, divId) => {
-    const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML += stringToPrint;
-  };
-
 const albums = [
   {
     title: "Neptune & The Vainy-Armed Apprentice",
@@ -59,6 +53,15 @@ const albums = [
     songs: ["Golden Submarine", "Under the Sea", "Flood Mansion Dreams"]
   }
 ];
+
+const printToDom = (stringToPrint, divId) => {
+  let selectedDiv = document.getElementById(divId);
+  if (selectedDiv !== null) {
+    selectedDiv.innerHTML += stringToPrint;
+  } else {
+    
+  }  
+};
 
 const albumBuilder = () => {
   let newString = "";
@@ -81,19 +84,19 @@ const albumBuilder = () => {
     printToDom(newString, 'discography')
 }
 
-albumBuilder();
-  const createBandCards = () => {
-    let newString = ''
-    for (let i = 0; i < band.length; i++) {
+// Band Member Card Creator
+const createBandCards = () => {
+  let newString = ''
+  for (let i = 0; i < band.length; i++) {
         newString += `<div class="member">`
           newString += `<h4>${band[i].name}</h4>`
-            newString += `<img src=${band[i].image}></img>`
-            newString +=`<div class="band__bio"`
-              newString += `<p>${band[i].bio}</p>`
-            newString += `</div>`  
+          newString += `<img src=${band[i].image}></img>`
+          newString +=`<div class="band__bio"`
+            newString += `<p>${band[i].bio}</p>`
+          newString += `</div>`  
         newString += `</div>`;
-      };
-      printToDom(newString, 'bio__card');
-    };
-
-createBandCards();
+  };
+  printToDom(newString, 'bio__card');
+};
+    createBandCards();
+    albumBuilder();

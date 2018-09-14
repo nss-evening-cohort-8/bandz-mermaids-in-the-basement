@@ -3,7 +3,7 @@ body {
        flex-direction: column; 
        min-height: 50vh;  
 }
-#container{
+#pageContent{
     margin:20px;  
     flex: 1;  
     display: flex;
@@ -22,9 +22,12 @@ body {
     flex-direction: row;
     justify-content: flex-end;
 }
-.navul li {
-    
+.band_title {
+    margin:auto;
+    font-family: 'Metal Mania', cursive;
+    font-size: 3em;
 }
+    
 #footer {
     display: flex;
     flex-wrap: wrap;
@@ -36,3 +39,20 @@ body {
     max-height: 30px;
     margin: 5px;
 }
+@media (min-width:600px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width:800px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width:1000px) {
+    body {
+      font-size: 20px;
+    }
+  }

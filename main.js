@@ -91,17 +91,29 @@ const createBandCards = () => {
         newString += `<div class="member">`
           newString += `<h3>${band[i].name}</h3>`
           newString += `<img class="band__image" src=${band[i].image}></img>`
-          newString +=`<div id="band__bio"`
-            newString += `<p>${band[i].bio}</p>`
-          newString += `</div>`  
+          newString += `<div class='bio'>`
+          newString += `<h5>Bio</h5>`
+            newString +=`<div id="band__bio" style='display: none'>`
+              newString += `<p>${band[i].bio}</p>`
+            newString += `</div>` 
+          newString += `</div>`     
         newString += `</div>`;
   };
   printToDom(newString, 'bio__card');
-  let bioDiv = document.getElementById('band__bio');
-  bioDiv.style.display = 'none';
 };
 
-  createBandCards();
-  albumBuilder();
+createBandCards();
+albumBuilder();
+
+const bioDiv = document.getElementById('bio');
+bioDiv.addEventListener('mouseover', function () {
+  if (bioDiv.style.display === "none") {
+    bioDiv.style.display = "block";
+  } else {
+    bioDiv.style.display = "none";
+  }
+});
+
+
 
    

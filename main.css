@@ -44,7 +44,6 @@ body {
 
 #band__body {
     background-color: rgb(0, 174, 255);
-    /* background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg"); */
     position: relative;
 }
 
@@ -114,7 +113,11 @@ body {
     font-family: 'Metal Mania', cursive;
 }
 
-.band__bio {
+.bio {
+    text-align: center;
+}
+
+#band__bio {
     text-align: justify;
     padding: 5px;
     font-family: 'Roboto', sans-serif;

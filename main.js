@@ -1,4 +1,4 @@
-/* JS for Members/Band Page */
+// JS for band.html
 
 let band = [
   {
@@ -45,19 +45,56 @@ const printToDom = (stringToPrint, divId) => {
 
 /* JS for Tour Page */
 
-  // const TOUR = {
-  //   Date: ‘Sept.7.2018”,
-  //   City: “San Francisco”,
-  //   Venue: “Golden Gate Park”,
-  //   Time: “1800 hrs PST”
-  // } {
-  //   Date: ‘Sept.7.2018”,
-  //   City: “San Francisco”,
-  //   Venue: “Golden Gate Park”,
-  //   Time: “1800 hrs PST”
-  // }
+const tour = {
+  when: "September 24, 2018",
+  venue: "Neptune\'s Grove",
+  time: "6 pm",
+},
+{
+  when: "October 24, 2018",
+  venue: "Athena\'s Temple",
+  time: "6 pm",
+},
+{
+  when: "October 31, 2018",
+  venue: "Atlantis Colleseum",
+  time: "8 pm",
+},
+{
+  when: "November 23, 2018",
+  venue: "Wooly\'s in Des Moines, IA",
+  time: "8 pm",
+},
+{
+  when: "December 21, 2018",
+  venue: "Cabo San Lucas, Pier 3",
+  time: "6 pm",
+},
+{
+  when: "January 20, 2019",
+  venue: "Teatro Antico di Taormina in Taormina, Italy",
+  time: "8 pm",
+},
+{
+  when: "February 19, 2019",
+  venue: "Waldbühne in Berlin, Germany",
+  time: "8 pm",
+};
 
+// JavaScript for Tour Dates
+const createTour = () => {
+  let newString = ''
+  for (let i = 0; i < tour.length; i++) {
+        newString += `<div class="tour">`
+          newString += `<h4>${tour[i].when}</h4>`
+          newString += `<h4>${tour[i].venue}></h4>`
+          newString +=`<h4>${tour[i].time}</h4>`
+          newString += `</div>`;
+  };
+  printToDom(newString, 'bio__card');
+};
 
+// JS for songs.html
 const albums = [
   {
     title: "Neptune & The Vainy-Armed Apprentice",
@@ -76,42 +113,49 @@ const albums = [
   }
 ];
 
+const printToDom = (stringToPrint, divId) => {
+  let selectedDiv = document.getElementById(divId);
+  if (selectedDiv !== null) {
+    selectedDiv.innerHTML += stringToPrint;
+  } else {
+    
+  }  
+};
+
 const albumBuilder = () => {
   let newString = "";
-  let index1 = "";
     for (i = 0; i < albums.length; i++) {
       items = albums.indexOf(albums[i]);
-      if(index1 % 2 === 0) {
+      if(items % 2 === 0) {
         newString += `<div class="even">`;
         newString += `Title: ${albums[i].title}<br>`;
-        newString += `Image: <img src=${albums[i].image}><br>`;
+        newString += `Album Art: <img src=${albums[i].image}><br>`;
         newString += `Songs: ${albums[i].songs}<br>`;
         newString += `</div><br>`;
       } else {
         newString += `<div class="odd">`;
         newString += `Title: ${albums[i].title}<br>`;
-        newString += `Image: <img src=${albums[i].image}><br>`;
+        newString += `Album Art: <img src=${albums[i].image}><br>`;
         newString += `Songs: ${albums[i].songs}<br>`;
         newString += `</div><br>`;
       }
     }
-    printToDom(newString, 'test')
-};
+    printToDom(newString, 'discography')
+}
 
-// albumBuilder();
-
+// Band Member Card Creator
 const createBandCards = () => {
   let newString = ''
-    for (let i = 0; i < band.length; i++) {
+  for (let i = 0; i < band.length; i++) {
         newString += `<div class="member">`
           newString += `<h4>${band[i].name}</h4>`
-            newString += `<img src=${band[i].image}></img>`
-            newString +=`<div class="band__bio"`
-              newString += `<p>${band[i].bio}</p>`
-            newString += `</div>`  
+          newString += `<img src=${band[i].image}></img>`
+          newString +=`<div class="band__bio"`
+            newString += `<p>${band[i].bio}</p>`
+          newString += `</div>`  
         newString += `</div>`;
-      };
-      printToDom(newString, 'bio__card');
-    };
-
-createBandCards();
+  };
+  printToDom(newString, 'bio__card');
+};
+    createBandCards();
+    albumBuilder();

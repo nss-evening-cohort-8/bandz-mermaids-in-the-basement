@@ -38,21 +38,16 @@ let band = [
   }
 ];
 
-const printToDom = (stringToPrint, divId) => {
-    const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML += stringToPrint;
-  };
-
 /* JS for Tour Page */
 const tour = [
 {
   when: "September 24, 2018",
-  venue: "Neptune\'s Grove",
+  venue: "Neptune's Grove",
   time: "6 pm",
 },
 {
   when: "October 24, 2018",
-  venue: "Athena\'s Temple",
+  venue: "Athena's Temple",
   time: "6 pm",
 },
 {
@@ -62,7 +57,7 @@ const tour = [
 },
 {
   when: "November 23, 2018",
-  venue: "Wooly\'s in Des Moines, IA",
+  venue: "Wooly's in Des Moines, IA",
   time: "8 pm",
 },
 {
@@ -79,15 +74,16 @@ const tour = [
   when: "February 19, 2019",
   venue: "Waldbühne in Berlin, Germany",
   time: "8 pm",
-};
+}
+];
 
 // JavaScript for Tour Dates
 const createTour = () => {
   let newString = ''
   for (let i = 0; i < tour.length; i++) {
-        newString += `<div class="tour">`
+        newString += `<div class="tours">`
           newString += `<h4>${tour[i].when}</h4>`
-          newString += `<h4>${tour[i].venue}></h4>`
+          newString += `<h4>${tour[i].venue}</h4>`
           newString += `<h4>${tour[i].time}</h4>`
           newString += `</div>`;
   }

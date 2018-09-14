@@ -65,25 +65,24 @@ const printToDom = (stringToPrint, divId) => {
 
 const albumBuilder = () => {
   let newString = "";
-  let index1 = "";
     for (i = 0; i < albums.length; i++) {
       items = albums.indexOf(albums[i]);
-      if(index1 % 2 === 0) {
+      if(items % 2 === 0) {
         newString += `<div class="even">`;
         newString += `Title: ${albums[i].title}<br>`;
-        newString += `Image: <img src=${albums[i].image}><br>`;
+        newString += `Album Art: <img src=${albums[i].image}><br>`;
         newString += `Songs: ${albums[i].songs}<br>`;
         newString += `</div><br>`;
       }else{
         newString += `<div class="odd">`;
         newString += `Title: ${albums[i].title}<br>`;
-        newString += `Image: <img src=${albums[i].image}><br>`;
+        newString += `Album Art: <img src=${albums[i].image}><br>`;
         newString += `Songs: ${albums[i].songs}<br>`;
         newString += `</div><br>`;
       }
     }
-    printToDom(newString, 'test')
-};
+    printToDom(newString, 'discography')
+}
 
 // Band Member Card Creator
 const createBandCards = () => {

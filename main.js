@@ -91,13 +91,16 @@ const createBandCards = () => {
         newString += `<div class="member">`
           newString += `<h3>${band[i].name}</h3>`
           newString += `<img class="band__image" src=${band[i].image}></img>`
-          newString +=`<div class="band__bio"`
+          newString +=`<div id="band__bio"`
             newString += `<p>${band[i].bio}</p>`
           newString += `</div>`  
         newString += `</div>`;
   };
   printToDom(newString, 'bio__card');
+  let bioDiv = document.getElementById('band__bio');
+  bioDiv.style.display = 'none';
 };
+
   createBandCards();
   albumBuilder();
 

@@ -39,13 +39,9 @@ body {
 
 /* Members Page CSS */
 
-#container {
-}
-
 #band__body {
     background-color: rgb(0, 174, 255);
     background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
-
 }
 
 #band__title {
@@ -56,7 +52,8 @@ body {
 		-1px -1px 0 rgb(245, 241, 241),
 		1px -1px 0 rgb(245, 241, 241),
 		-1px 1px 0 rgb(245, 241, 241),
-		1px 1px 0 rgb(245, 241, 241);
+        1px 1px 0 rgb(245, 241, 241);
+        margin: 0;
 }
 
 #band__subtitle {
@@ -67,7 +64,8 @@ body {
 		-1px -1px 0 rgb(245, 241, 241),
 		1px -1px 0 rgb(245, 241, 241),
 		-1px 1px 0 rgb(245, 241, 241),
-		1px 1px 0 rgb(245, 241, 241);
+        1px 1px 0 rgb(245, 241, 241);
+        margin: 0;
 }
 
 #bio__card {
@@ -83,7 +81,7 @@ body {
     margin: 10px;
     padding: 5px;
     background-color: aquamarine;
-    box-shadow: 10px 10px 5px lightgray;
+    box-shadow: 10px 10px 5px rgb(235, 182, 133);
 }
 
 .band__image {

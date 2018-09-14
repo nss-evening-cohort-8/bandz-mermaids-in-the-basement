@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania');
+
 body {
        display: flex;
        flex-direction: column; 
@@ -32,9 +34,14 @@ body {
 /* CSS for Tour Page */
 
 .tour__h1 {
+    font-family: 'Metal Mania', cursive;
     text-align: center;
+    font-size: 3em;
     text-transform: uppercase;
-    text-shadow: 5px 5px #3af007;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
 .tour {

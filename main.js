@@ -66,15 +66,15 @@ const albumBuilder = () => {
       items = albums.indexOf(albums[i]);
       if(items % 2 === 0) {
         newString += `<div class="even">`;
-        newString += `Title: ${albums[i].title}<br>`;
-        newString += `Album Art: <img src=${albums[i].image}><br>`;
-        newString += `Songs: ${albums[i].songs}<br>`;
+        newString += `Title: <div class="even__titles"></div>${albums[i].title}<br>`;
+        newString += `Album Art: <img id="even__pic"src=${albums[i].image}><br>`;
+        newString += `Songs: <div class="even__songs"></div>${albums[i].songs}<br>`;
         newString += `</div><br>`;
       }else{
         newString += `<div class="odd">`;
-        newString += `Title: ${albums[i].title}<br>`;
-        newString += `Album Art: <img src=${albums[i].image}><br>`;
-        newString += `Songs: ${albums[i].songs}<br>`;
+        newString += `Title: <div class="odd__titles"></div>${albums[i].title}<br>`;
+        newString += `Album Art: <img id="odd__pic"src=${albums[i].image}><br>`;
+        newString += `Songs: <div class="odd__songs"></div>${albums[i].songs}<br>`;
         newString += `</div><br>`;
       }
     }

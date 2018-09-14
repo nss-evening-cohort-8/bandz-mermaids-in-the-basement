@@ -30,6 +30,48 @@ body {
     min-height: 50vh;  
 }
 
+/*******************************************************************DISCOGRAPHY*****************************************************************/
+
+.even {
+    height: 500px;
+    width: auto;
+    margin: 50px 0;
+    background-color: blue;
+
+}
+
+.odd {
+    height: 500px;
+    width: auto;
+    margin: 50px 0;
+    background-color: red;
+
+}
+
+#even__pic{
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#odd__pic{
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.even__titles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.even__songs{
+
+}
 /*****************************************************************FOOTER*****************************************************************/
 
 #footer {

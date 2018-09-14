@@ -98,7 +98,7 @@ const createBandCards = () => {
   };
   printToDom(newString, 'bio__card');
 };
-    createBandCards();
-    albumBuilder();
+  createBandCards();
+  albumBuilder();
 
    

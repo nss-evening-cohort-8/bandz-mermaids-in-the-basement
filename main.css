@@ -37,7 +37,7 @@ body {
     text-shadow: 5px 5px #3af007;
 }
 
-.tour__domdiv {
+.tour {
     flex: 100%;
     flex-direction: column;
     height: 600px;

@@ -44,8 +44,8 @@ const printToDom = (stringToPrint, divId) => {
   };
 
 /* JS for Tour Page */
-
-const tour = {
+const tour = [
+{
   when: "September 24, 2018",
   venue: "Neptune\'s Grove",
   time: "6 pm",
@@ -88,10 +88,10 @@ const createTour = () => {
         newString += `<div class="tour">`
           newString += `<h4>${tour[i].when}</h4>`
           newString += `<h4>${tour[i].venue}></h4>`
-          newString +=`<h4>${tour[i].time}</h4>`
+          newString += `<h4>${tour[i].time}</h4>`
           newString += `</div>`;
-  };
-  printToDom(newString, 'bio__card');
+  }
+  printToDom(newString, 'tour__dates');
 };
 
 // JS for songs.html
@@ -159,3 +159,4 @@ const createBandCards = () => {
 };
     createBandCards();
     albumBuilder();
+    createTour();

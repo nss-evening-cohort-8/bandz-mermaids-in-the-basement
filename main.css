@@ -60,6 +60,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
 }
 
 .even__titles{

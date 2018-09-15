@@ -81,19 +81,19 @@ const albumBuilder = () => {
     printToDom(newString, 'discography')
 }
 
-albumBuilder();
-  const createBandCards = () => {
-    let newString = ''
-    for (let i = 0; i < band.length; i++) {
-        newString += `<div class="member">`
-          newString += `<h4>${band[i].name}</h4>`
-            newString += `<img src=${band[i].image}></img>`
-            newString +=`<div class="band__bio"`
-              newString += `<p>${band[i].bio}</p>`
-            newString += `</div>`  
-        newString += `</div>`;
-      };
-      printToDom(newString, 'bio__card');
-    };
+const createBandCards = () => {
+  let newString = ''
+  for (let i = 0; i < band.length; i++) {
+    newString += `<div class="member">`
+    newString += `<h4>${band[i].name}</h4>`
+    newString += `<img src=${band[i].image}></img>`
+    newString +=`<div class="band__bio"`
+    newString += `<p>${band[i].bio}</p>`
+    newString += `</div>`  
+    newString += `</div>`;
+  };
+  printToDom(newString, 'bio__card');
+};
 
+albumBuilder();
 createBandCards();

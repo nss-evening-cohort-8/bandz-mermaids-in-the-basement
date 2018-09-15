@@ -96,4 +96,4 @@ const createBandCards = () => {
 };
 
 albumBuilder();
-createBandCards();
+// createBandCards();

@@ -41,38 +41,36 @@ body {
 }
 
 .odd {
-    height: 500px;
-    width: auto;
-    margin: 50px 0;
-    background-color: red;
+    background-color: skyblue;
+    display: flex;
+    /* width: 30%; */
+    /* justify-content: fle */
 
 }
 
 #even__pic{
     height: 300px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-wrap: wrap;
+    flex-direction: row;  */
 }
 
 #odd__pic{
     height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-self: flex-end;
 
 }
 
-.even__titles{
+/* .even__titles{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: right;
-}
+} */
 
-.even__songs{
+/* .even__songs{
 
-}
+} */
 /*****************************************************************FOOTER*****************************************************************/
 
 #footer {

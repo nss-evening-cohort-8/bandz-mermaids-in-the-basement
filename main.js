@@ -105,9 +105,9 @@ const createTour = () => {
   let newString = ''
   for (let i = 0; i < tour.length; i++) {
         newString += `<div class="tours">`
-          newString += `<h4>${tour[i].when}</h4>`
-          newString += `<h4>${tour[i].venue}</h4>`
-          newString += `<h4>${tour[i].time}</h4>`
+          newString += `${tour[i].when}`
+          newString += `${tour[i].venue}`
+          newString += `${tour[i].time}`
           newString += `</div>`;
   }
   printToDom(newString, 'tour__dates');
@@ -162,21 +162,39 @@ const albumBuilder = () => {
     printToDom(newString, 'discography')
 }
 
+const showBio = () => {
+  let bioDiv = document.getElementsByClassName('band__image');
+  let bio = document.getElementsByClassName('band__bio');
+  for (let i = 0; i < bioDiv.length; i++) {
+    bioDiv[i].addEventListener('click', function () {
+      if (bio[i].style.display === "none") {
+        bio[i].style.display = "block";
+      } else {
+    bio[i].style.display = "none";
+    }
+    })
+  }
+};
 // Band Member Card Creator
 const createBandCards = () => {
-  let newString = ''
+  let newString = '';
   for (let i = 0; i < band.length; i++) {
         newString += `<div class="member">`
           newString += `<h3>${band[i].name}</h3>`
           newString += `<img class="band__image" src=${band[i].image}></img>`
-          newString +=`<div class="band__bio"`
-            newString += `<p>${band[i].bio}</p>`
-          newString += `</div>`  
+          newString += `<div id='bio'>`
+          // newString += `<h5>Bio</h5>`
+            newString +=`<div class="band__bio" style='display: none'>`
+              newString += `<p>${band[i].bio}</p>`
+            newString += `</div>` 
+          newString += `</div>`     
         newString += `</div>`;
   };
   printToDom(newString, 'bio__card');
+  showBio();
 };
 
-    createBandCards();
-    albumBuilder();
-    createTour();
+createBandCards();
+albumBuilder();
+createTour();
+

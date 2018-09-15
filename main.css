@@ -36,6 +36,10 @@ a {
     text-decoration: none;
     color: cadetblue;
    }
+.logo {
+    font-family: 'Metal Mania', cursive;
+    padding-left: 10px;
+}
 .band_title {
     margin:auto;
     font-family: 'Metal Mania', cursive;

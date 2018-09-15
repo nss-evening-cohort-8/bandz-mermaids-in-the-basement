@@ -50,7 +50,6 @@ body {
 
 #even__pic{
     height: 300px;
-    display: flex;
     /* flex-wrap: wrap;
     flex-direction: row;  */
 }

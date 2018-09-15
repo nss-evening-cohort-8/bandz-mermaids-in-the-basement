@@ -127,6 +127,7 @@ const albumBuilder = () => {
         newString += `<div class="odd">`;
         newString += `<div>`;
         newString += `<div class="odd__titles">${albums[i].title}</div>`;
+        newString += `<h4 class="odd__songs">Songs</h4>`
         for (j = 0; j < albums[i].songs.length; j++) {
           newString += `<div class="odd__songs">${albums[i].songs[j]}</div>`;
         }
@@ -137,6 +138,7 @@ const albumBuilder = () => {
         newString += `<div class="even">`;
         newString += `<div>`;
         newString += `<div class="even__titles">${albums[i].title}</div>`;
+        newString += `<h4 class="even__songs">Songs</h4>`
         for (j = 0; j < albums[i].songs.length; j++) {
           newString += `<div class="even__songs">${albums[i].songs[j]}</div>`;
         }

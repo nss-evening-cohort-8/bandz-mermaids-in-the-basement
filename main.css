@@ -98,8 +98,15 @@ a {
 
 /* Members Page CSS */
 
-.band__barber {
-    width: 100%;
+#band__top {
+    display: flex;
+    flex-direction: row;
+    border: solid: pink;
+}
+
+#band__barber {
+    align-self: center;
+    border: solid black;
 }
 
 #band__body {

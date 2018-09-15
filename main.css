@@ -58,10 +58,29 @@ a {
 }
 
 /* CSS for Tour Page */
+.tour__body {
+    position: relative;
+    margin: 0;
+}
+
+.tour__body:after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .4; 
+    z-index: -1;
+    background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
+    background-size: cover;
+    margin:0;
+}
+
 .tour__h1 {
     font-family: 'Metal Mania', cursive;
     text-align: center;
-    font-size: 3em;
+    font-size: 5em;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
@@ -70,9 +89,10 @@ a {
 }
 
 .tours {
-    flex-direction: row;
+    /* flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
+    margin: auto;
 }
 
 .caption {

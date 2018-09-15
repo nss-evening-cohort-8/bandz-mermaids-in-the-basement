@@ -1,38 +1,60 @@
 body {
        display: flex;
        flex-direction: column; 
-       min-height: 50vh;  
+       min-height: 100vh;  
+       margin: 0px;
 }
-#pageContent{
-    margin:20px;  
+#container{
     flex: 1;  
     display: flex;
     flex-direction: row;
 }
-
 .navigation {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0px;
 }
+nav ul li a:hover{
+    background-color: rgb(108, 202, 202);
+}
+.nav_list {
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+ }
 .navul {
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: flex-end;
 }
+a {
+    text-decoration: none;
+    color: cadetblue;
+   }
 .band_title {
     margin:auto;
     font-family: 'Metal Mania', cursive;
     font-size: 3em;
+    color: azure;
 }
-    
+  
+.slide_img{
+    background-image: url('https://i.warosu.org/data/tg/img/0294/29/1389487235150.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 #footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    background-color: aliceblue;
+
 }
 .footer_img{
     max-width: 30px;

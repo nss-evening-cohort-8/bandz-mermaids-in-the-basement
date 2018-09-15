@@ -58,12 +58,11 @@ a {
 }
 
 /* CSS for Tour Page */
-.tour__body {
+#tour__body {
     position: relative;
     margin: 0;
 }
-
-.tour__body:after {
+#tour__body:after {
     content: "";
     position: absolute;
     top: 0; 
@@ -77,10 +76,16 @@ a {
     margin:0;
 }
 
+.flexon {
+    display: flex;
+    justify-content: center;
+}
+
 .tour__h1 {
     font-family: 'Metal Mania', cursive;
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
+    padding: 0;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
@@ -88,15 +93,35 @@ a {
     text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
-.tours {
-    /* flex-direction: row;
+.tour__h6 {
+    font-family: 'Metal Mania', cursive;
+    text-align: center;
+    font-size: 1em;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+#tour_dates {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: space-between; */
-    margin: auto;
 }
 
 .caption {
     font-size: 12px;
+}
+
+.tour__footer {
+    position: absolute; bottom: 0px; left: 0;
+    width: 100%;
+    height:auto;
 }
 
 /* CSS for Footer */

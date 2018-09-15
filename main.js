@@ -38,11 +38,6 @@ let band = [
   }
 ];
 
-const printToDom = (stringToPrint, divId) => {
-    const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML += stringToPrint;
-  };
-
 /* JS for Tour Page */
 const tour = [
 {

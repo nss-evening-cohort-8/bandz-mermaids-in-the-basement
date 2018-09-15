@@ -33,31 +33,36 @@ body {
 
 /*******************************************************************DISCOGRAPHY*****************************************************************/
 
-.even {
+.odd {
+    display: flex;
+    flex-direction: row-reverse;
     height: 500px;
-    width: auto;
+    width: 100%;
     margin: 50px 0;
     background-color: blue;
+    justify-content: space-between;
 }
 
-.odd {
+.even {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
     background-color: skyblue;
-    /* justify-content: */
+    justify-content: space-between;
 }
 
-#even__pic{
-    height: 300px;
+
+.even__pic {
+    height: 100%
 }
 
-#odd__pic{
-    height: 300px;
+.odd__pic {
+    height: 100%;
 }
 
 /* .even__titles{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: right;
+
 } */
 
 /* .even__songs{

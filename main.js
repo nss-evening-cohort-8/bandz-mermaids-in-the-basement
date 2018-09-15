@@ -65,17 +65,21 @@ const albumBuilder = () => {
     for (i = 0; i < albums.length; i++) {
       items = albums.indexOf(albums[i]);
       if(items % 2 === 0) {
-        newString += `<div class="even">`;
-        newString += `<div class="even__titles">Title: ${albums[i].title}</div><br>`;
-        newString += `Album Art: <img id="even__pic"src=${albums[i].image}><br>`;
-        newString += `<div class="even__songs">Songs: ${albums[i].songs}</div><br>`;
-        newString += `</div><br>`;
-      }else{
         newString += `<div class="odd">`;
-        newString += `Title: <div class="odd__titles"></div>${albums[i].title}<br>`;
-        newString += `Album Art: <img id="odd__pic"src=${albums[i].image}><br>`;
-        newString += `Songs: <div class="odd__songs"></div>${albums[i].songs}<br>`;
-        newString += `</div><br>`;
+        newString += `<div>`;
+        newString += `<div class="even__titles">Title: ${albums[i].title}</div>`;
+        newString += `<div class="even__songs">Songs: ${albums[i].songs}</div>`;
+        newString += `</div>`;
+        newString += `<img class="even__pic"src=${albums[i].image}>`;
+        newString += `</div>`;
+      }else{
+        newString += `<div class="even">`;
+        newString += `<div>`;
+        newString += `Title: <div class="odd__titles">${albums[i].title}</div>`;
+        newString += `Songs: <div class="odd__songs">${albums[i].songs}</div>`;
+        newString += `</div>`;
+        newString += `<img class="odd__pic"src=${albums[i].image}>`;
+        newString += `</div>`;
       }
     }
     printToDom(newString, 'discography')

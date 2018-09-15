@@ -42,7 +42,7 @@ body {
 
 .odd {
     background-color: skyblue;
-    justify-content: flex-end;
+    /* justify-content: */
 }
 
 #even__pic{

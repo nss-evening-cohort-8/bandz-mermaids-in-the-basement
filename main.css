@@ -120,7 +120,7 @@ a {
 		1px -1px 0 rgb(245, 241, 241),
 		-1px 1px 0 rgb(245, 241, 241),
         1px 1px 0 rgb(245, 241, 241);
-        margin: 0;
+    margin: 0;
 }
 
 #band__subtitle {
@@ -140,6 +140,7 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 .member {
@@ -165,7 +166,11 @@ a {
     font-family: 'Metal Mania', cursive;
 }
 
-.band__bio {
+#bio {
+    text-align: center;
+}
+
+#band__bio {
     text-align: justify;
     padding: 5px;
     font-family: 'Roboto', sans-serif;

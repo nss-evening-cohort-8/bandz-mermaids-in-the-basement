@@ -60,25 +60,41 @@ const albums = [
   }
 ];
 
+const songBuilder = () => {
+  let songsList1 = albums[0].songs;
+  let newString1 = ""
+  for (i =0; i < songsList1.length; i++) {
+    newString1 += `<div>${songsList1}</div>`;
+  };
+    console.log(songsList1);
+}
+
+songBuilder();
+
 const albumBuilder = () => {
   let newString = "";
+  let songsList1 = albums[0].songs;
     for (i = 0; i < albums.length; i++) {
       items = albums.indexOf(albums[i]);
       if(items % 2 === 0) {
         newString += `<div class="odd">`;
         newString += `<div>`;
-        newString += `<div class="even__titles">Title: ${albums[i].title}</div>`;
-        newString += `<div class="even__songs">Songs: ${albums[i].songs}</div>`;
+        newString += `<div class="odd__titles">${albums[i].title}</div>`;
+        for (j = 0; j < albums[i].songs.length; j++) {
+          newString += `<div class="odd__songs">${albums[i].songs[j]}</div>`;
+        }
         newString += `</div>`;
-        newString += `<img class="even__pic"src=${albums[i].image}>`;
+        newString += `<img class="odd__pic"src=${albums[i].image}>`;
         newString += `</div>`;
       }else{
         newString += `<div class="even">`;
         newString += `<div>`;
-        newString += `Title: <div class="odd__titles">${albums[i].title}</div>`;
-        newString += `Songs: <div class="odd__songs">${albums[i].songs}</div>`;
+        newString += `<div class="even__titles">${albums[i].title}</div>`;
+        for (j = 0; j < albums[i].songs.length; j++) {
+          newString += `<div class="even__songs">${albums[i].songs[j]}</div>`;
+        }
         newString += `</div>`;
-        newString += `<img class="odd__pic"src=${albums[i].image}>`;
+        newString += `<img class="even__pic"src=${albums[i].image}>`;
         newString += `</div>`;
       }
     }

@@ -28,7 +28,8 @@
 body {
     display: flex;
     flex-direction: column; 
-    min-height: 50vh;  
+    min-height: 50vh;
+    background: url(https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg);  
 }
 
 /*******************************************************************DISCOGRAPHY*****************************************************************/
@@ -39,8 +40,9 @@ body {
     height: 500px;
     width: 100%;
     margin: 50px 0;
-    background-color: blue;
-    justify-content: space-between;
+    background-color: skyblue;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .even {
@@ -49,27 +51,64 @@ body {
     height: 500px;
     width: 100%;
     background-color: skyblue;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 
 .even__pic {
-    height: 100%
+    height: 500px;
+    width: 500px;
 }
 
 .odd__pic {
-    height: 100%;
+    height: 500px;
+    width: 500px;
 }
 
+.discography {
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 5em;
+    color: white;
+}
 
-
-/* .even__titles{
-
+/* #discography {
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
 } */
 
-/* .even__songs{
+.even__titles{
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 55px;
+    color: white;
+}
 
-} */
+.odd__titles{
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 55px;
+    color: white;
+}
+
+.even__songs{
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 40px;
+    color: white;
+
+}
+
+.odd__songs{
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 40px;
+    color: white;
+
+}
+
 /*****************************************************************FOOTER*****************************************************************/
 
 #footer {

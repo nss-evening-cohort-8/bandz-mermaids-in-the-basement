@@ -92,8 +92,8 @@ const createBandCards = () => {
           newString += `<h3>${band[i].name}</h3>`
           newString += `<img class="band__image" src=${band[i].image}></img>`
           newString += `<div id='bio'>`
-          newString += `<h5>Bio</h5>`
-            newString +=`<div id="band__bio" style='display: none'>`
+          // newString += `<h5>Bio</h5>`
+            newString +=`<div class="band__bio" style='display: none'>`
               newString += `<p>${band[i].bio}</p>`
             newString += `</div>` 
           newString += `</div>`     
@@ -105,16 +105,17 @@ const createBandCards = () => {
 createBandCards();
 albumBuilder();
 
-let bioDiv = document.getElementById('bio');
-let bio = document.getElementById('band__bio');
-bioDiv.addEventListener('click', function () {
-  if (bio.style.display === "none") {
-    bio.style.display = "block";
+let bioDiv = document.getElementsByClassName('band__image');
+let bio = document.getElementsByClassName('band__bio');
+for (let i = 0; i < bioDiv.length; i++) {
+bioDiv[i].addEventListener('click', function () {
+  if (bio[i].style.display === "none") {
+    bio[i].style.display = "block";
   } else {
-  bio.style.display = "none";
+  bio[i].style.display = "none";
   }
-});
-
+})
+};
 
 
 

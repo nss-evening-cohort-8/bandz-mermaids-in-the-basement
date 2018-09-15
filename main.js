@@ -139,6 +139,19 @@ const albumBuilder = () => {
     printToDom(newString, 'discography')
 }
 
+const showBio = () => {
+  let bioDiv = document.getElementsByClassName('band__image');
+  let bio = document.getElementsByClassName('band__bio');
+  for (let i = 0; i < bioDiv.length; i++) {
+    bioDiv[i].addEventListener('click', function () {
+      if (bio[i].style.display === "none") {
+        bio[i].style.display = "block";
+      } else {
+    bio[i].style.display = "none";
+    }
+    })
+  }
+};
 // Band Member Card Creator
 const createBandCards = () => {
   let newString = '';
@@ -155,21 +168,15 @@ const createBandCards = () => {
         newString += `</div>`;
   };
   printToDom(newString, 'bio__card');
-};
-
-let bioDiv = document.getElementsByClassName('band__image');
-let bio = document.getElementsByClassName('band__bio');
-for (let i = 0; i < bioDiv.length; i++) {
-  bioDiv[i].addEventListener('click', function () {
-    if (bio[i].style.display === "none") {
-      bio[i].style.display = "block";
-    } else {
-   bio[i].style.display = "none";
-   }
-  })
+  showBio();
 };
 
 
-    createBandCards();
-    albumBuilder();
-    createTour();
+
+createBandCards();
+albumBuilder();
+createTour();
+
+
+
+

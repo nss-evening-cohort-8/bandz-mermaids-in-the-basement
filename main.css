@@ -5,7 +5,7 @@ body {
        flex-direction: column; 
        min-height: 100vh;  
        margin: 0px;
-}
+} */
 #container{
     flex: 1;  
     display: flex;
@@ -49,6 +49,7 @@ a {
     font-family: 'Metal Mania', cursive;
     font-size: 3em;
     color: azure;
+    text-shadow: 5px 5px rgb(0, 0, 0);
 }
   
 .slide_img{
@@ -59,6 +60,7 @@ a {
 
 /* CSS for Tour Page */
 .tour__h1 {
+    margin: auto;
     font-family: 'Metal Mania', cursive;
     text-align: center;
     font-size: 3em;
@@ -69,10 +71,14 @@ a {
     text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
-.tour {
-    flex: 100%;
-    flex-direction: column;
-    height: 600px;
+.tours {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.caption {
+    font-size: 12px;
 }
 
 /* CSS for Footer */
@@ -82,7 +88,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     background-color: aliceblue;
-
 }
 .footer_img{
     max-width: 30px;

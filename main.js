@@ -108,13 +108,13 @@ albumBuilder();
 let bioDiv = document.getElementsByClassName('band__image');
 let bio = document.getElementsByClassName('band__bio');
 for (let i = 0; i < bioDiv.length; i++) {
-bioDiv[i].addEventListener('click', function () {
-  if (bio[i].style.display === "none") {
-    bio[i].style.display = "block";
-  } else {
-  bio[i].style.display = "none";
-  }
-})
+  bioDiv[i].addEventListener('click', function () {
+    if (bio[i].style.display === "none") {
+      bio[i].style.display = "block";
+    } else {
+   bio[i].style.display = "none";
+   }
+  })
 };
 
 

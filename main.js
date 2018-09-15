@@ -1,3 +1,5 @@
+// JS for band.html
+
 let band = [
   {
     name: 'Aegaeon',
@@ -36,12 +38,59 @@ let band = [
   }
 ];
 
+/* JS for Tour Page */
+const tour = [
+{
+  when: "September 24, 2018",
+  venue: "Neptune's Grove",
+  time: "6 pm",
+},
+{
+  when: "October 24, 2018",
+  venue: "Athena's Temple",
+  time: "6 pm",
+},
+{
+  when: "October 31, 2018",
+  venue: "Atlantis Colleseum",
+  time: "8 pm",
+},
+{
+  when: "November 23, 2018",
+  venue: "Wooly's in Des Moines, IA",
+  time: "8 pm",
+},
+{
+  when: "December 21, 2018",
+  venue: "Cabo San Lucas, Pier 3",
+  time: "6 pm",
+},
+{
+  when: "January 20, 2019",
+  venue: "Teatro Antico di Taormina in Taormina, Italy",
+  time: "8 pm",
+},
+{
+  when: "February 19, 2019",
+  venue: "Waldbühne in Berlin, Germany",
+  time: "8 pm",
+}
+];
 
-const printToDom = (stringToPrint, divId) => {
-    const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML += stringToPrint;
-  };
+// JavaScript for Tour Dates
+const createTour = () => {
+  let newString = ''
+  for (let i = 0; i < tour.length; i++) {
+        newString += `<div class="tours">`
+          newString += `${tour[i].when}`
+          newString += `${tour[i].venue}`
+          newString += `${tour[i].time}`
+          newString += `</div>`;
+  }
+  printToDom(newString, 'tour__dates');
+};
 
+// JS for songs.html
 const albums = [
   {
     title: "Neptune & The Vainy-Armed Apprentice",
@@ -60,16 +109,14 @@ const albums = [
   }
 ];
 
-const songBuilder = () => {
-  let songsList1 = albums[0].songs;
-  let newString1 = ""
-  for (i =0; i < songsList1.length; i++) {
-    newString1 += `<div>${songsList1}</div>`;
-  };
-    console.log(songsList1);
-}
-
-songBuilder();
+const printToDom = (stringToPrint, divId) => {
+  let selectedDiv = document.getElementById(divId);
+  if (selectedDiv !== null) {
+    selectedDiv.innerHTML += stringToPrint;
+  } else {
+    
+  }  
+};
 
 const albumBuilder = () => {
   let newString = "";
@@ -101,19 +148,39 @@ const albumBuilder = () => {
     printToDom(newString, 'discography')
 }
 
+const showBio = () => {
+  let bioDiv = document.getElementsByClassName('band__image');
+  let bio = document.getElementsByClassName('band__bio');
+  for (let i = 0; i < bioDiv.length; i++) {
+    bioDiv[i].addEventListener('click', function () {
+      if (bio[i].style.display === "none") {
+        bio[i].style.display = "block";
+      } else {
+    bio[i].style.display = "none";
+    }
+    })
+  }
+};
+// Band Member Card Creator
 const createBandCards = () => {
-  let newString = ''
+  let newString = '';
   for (let i = 0; i < band.length; i++) {
-    newString += `<div class="member">`
-    newString += `<h4>${band[i].name}</h4>`
-    newString += `<img src=${band[i].image}></img>`
-    newString +=`<div class="band__bio"`
-    newString += `<p>${band[i].bio}</p>`
-    newString += `</div>`  
-    newString += `</div>`;
+        newString += `<div class="member">`
+          newString += `<h3>${band[i].name}</h3>`
+          newString += `<img class="band__image" src=${band[i].image}></img>`
+          newString += `<div id='bio'>`
+          // newString += `<h5>Bio</h5>`
+            newString +=`<div class="band__bio" style='display: none'>`
+              newString += `<p>${band[i].bio}</p>`
+            newString += `</div>` 
+          newString += `</div>`     
+        newString += `</div>`;
   };
   printToDom(newString, 'bio__card');
+  showBio();
 };
 
+createBandCards();
 albumBuilder();
-// createBandCards();
+createTour();
+

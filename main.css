@@ -3,14 +3,9 @@
 body {
        display: flex;
        flex-direction: column; 
-       min-height: 50vh;
-}
-
-#pageContent{
-    margin:20px;  
-    min-height: 100vh;  
-    margin: 0px;
-}
+       min-height: 100vh;  
+       margin: 0px;
+} */
 #container{
     flex: 1;  
     display: flex;
@@ -77,7 +72,6 @@ a {
 }
 
 .tours {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;

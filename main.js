@@ -144,8 +144,8 @@ const createBandCards = () => {
   let newString = ''
   for (let i = 0; i < band.length; i++) {
         newString += `<div class="member">`
-          newString += `<h4>${band[i].name}</h4>`
-          newString += `<img src=${band[i].image}></img>`
+          newString += `<h3>${band[i].name}</h3>`
+          newString += `<img class="band__image" src=${band[i].image}></img>`
           newString +=`<div class="band__bio"`
             newString += `<p>${band[i].bio}</p>`
           newString += `</div>`  
@@ -153,6 +153,7 @@ const createBandCards = () => {
   };
   printToDom(newString, 'bio__card');
 };
+
     createBandCards();
     albumBuilder();
     createTour();

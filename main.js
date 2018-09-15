@@ -83,8 +83,8 @@ const createTour = () => {
   for (let i = 0; i < tour.length; i++) {
         newString += `<div class="tours">`
           newString += `<h4>${tour[i].when}</h4>`
-          newString += `<h4>${tour[i].venue}</h4>`
-          newString += `<h4>${tour[i].time}</h4>`
+          newString += `<h6>${tour[i].venue}<h6>`
+          newString += `<h6>${tour[i].time}<h6>`
           newString += `</div>`;
   }
   printToDom(newString, 'tour__dates');

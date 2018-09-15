@@ -81,6 +81,10 @@ a {
     flex-direction: column;
 }
 
+.caption {
+    font-size: 12px;
+}
+
 /* CSS for Footer */
 #footer {
     display: flex;

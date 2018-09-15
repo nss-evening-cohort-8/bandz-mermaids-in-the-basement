@@ -18,12 +18,13 @@
 
 /*******************************************************************BODY*****************************************************************/
 
-#container{
+#container {
     margin:20px;  
     flex: 1;  
     display: flex;
     flex-direction: row;
 }
+
 body {
     display: flex;
     flex-direction: column; 
@@ -37,27 +38,19 @@ body {
     width: auto;
     margin: 50px 0;
     background-color: blue;
-
 }
 
 .odd {
     background-color: skyblue;
-    display: flex;
-    /* width: 30%; */
-    /* justify-content: fle */
-
+    justify-content: flex-end;
 }
 
 #even__pic{
     height: 300px;
-    /* flex-wrap: wrap;
-    flex-direction: row;  */
 }
 
 #odd__pic{
     height: 300px;
-    justify-self: flex-end;
-
 }
 
 /* .even__titles{

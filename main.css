@@ -113,11 +113,11 @@ body {
     font-family: 'Metal Mania', cursive;
 }
 
-#bio {
+.bio {
     text-align: center;
 }
 
-#band__bio {
+.band__bio {
     text-align: justify;
     padding: 5px;
     font-family: 'Roboto', sans-serif;

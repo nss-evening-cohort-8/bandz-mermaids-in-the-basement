@@ -45,18 +45,21 @@ a {
     padding-left: 10px;
 }
 .band_title {
-    margin:auto;
+    margin:30px;
     font-family: 'Metal Mania', cursive;
     font-size: 3em;
     color: azure;
+    padding-bottom: 0px;
 }
   
+#background{
+    margin:auto;
+}
 #slide_img{
     /* background-image: url('https://i.warosu.org/data/tg/img/0294/29/1389487235150.png'); */
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    z-index: -1;
-
+    /* height: 500px; */
+    width: 700px; 
 }
 
 /* CSS for Tour Page */

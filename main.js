@@ -41,7 +41,7 @@ let band = [
 /* Home Page Slideshow*/
 let i=0;
 let images = [];
-const time = 3000;
+let time = 3000;
 
 //image list 
 images[0] = "https://i.warosu.org/data/tg/img/0294/29/1389487235150.png";

@@ -5,7 +5,11 @@ body {
        flex-direction: column; 
        min-height: 100vh;  
        margin: 0px;
+       background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
 }
+/* body_container{
+    background-image: "https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg";
+} */
 #container{
     flex: 1;  
     display: flex;
@@ -58,7 +62,7 @@ a {
 #slide_img{
     /* background-image: url('https://i.warosu.org/data/tg/img/0294/29/1389487235150.png'); */
     background-repeat: no-repeat;
-    /* height: 500px; */
+    height: 400px;
     width: 700px; 
 }
 

@@ -49,7 +49,6 @@ a {
     font-family: 'Metal Mania', cursive;
     font-size: 3em;
     color: azure;
-    text-shadow: 5px 5px rgb(0, 0, 0);
 }
   
 .slide_img{
@@ -60,7 +59,6 @@ a {
 
 /* CSS for Tour Page */
 .tour__h1 {
-    margin: auto;
     font-family: 'Metal Mania', cursive;
     text-align: center;
     font-size: 3em;

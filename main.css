@@ -76,9 +76,11 @@ a {
     text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
-.tour {
-    flex: 100%;
-    flex-direction: column;
+.tours {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .caption {

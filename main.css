@@ -101,7 +101,8 @@ a {
 #band__top {
     display: flex;
     flex-direction: row;
-    border: solid: pink;
+    border: solid pink;
+    
 }
 
 #band__barber {

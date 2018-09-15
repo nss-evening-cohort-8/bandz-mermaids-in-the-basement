@@ -51,8 +51,8 @@ a {
     color: azure;
 }
   
-.slide_img{
-    background-image: url('https://i.warosu.org/data/tg/img/0294/29/1389487235150.png');
+#slide_img{
+    /* background-image: url('https://i.warosu.org/data/tg/img/0294/29/1389487235150.png'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

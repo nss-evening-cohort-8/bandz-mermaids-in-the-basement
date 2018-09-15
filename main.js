@@ -38,6 +38,28 @@ let band = [
   }
 ];
 
+/* Home Page Slideshow*/
+let i=0;
+let images = [];
+const time = 3000;
+
+//image list 
+images[0] = "https://i.warosu.org/data/tg/img/0294/29/1389487235150.png";
+images[1] = "https://i.pinimg.com/originals/16/3d/95/163d95f8b269f47ee0cfca91934dff57.jpg";
+
+function changeImg(){
+  document.getElementById('slide_img').src = images[i];
+  if(i < images.length - 1){
+    i++;
+  }
+    else {
+    i = 0;
+    }
+    setTimeout("changeImg()", time);
+  }
+  window.onload = changeImg;
+
+
 /* JS for Tour Page */
 const tour = [
 {

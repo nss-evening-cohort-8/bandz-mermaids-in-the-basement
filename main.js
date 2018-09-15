@@ -1,3 +1,5 @@
+// JS for band.html
+
 let band = [
   {
     name: 'Aegaeon',
@@ -36,6 +38,59 @@ let band = [
   }
 ];
 
+/* JS for Tour Page */
+const tour = [
+{
+  when: "September 24, 2018",
+  venue: "Neptune's Grove",
+  time: "6 pm",
+},
+{
+  when: "October 24, 2018",
+  venue: "Athena's Temple",
+  time: "6 pm",
+},
+{
+  when: "October 31, 2018",
+  venue: "Atlantis Colleseum",
+  time: "8 pm",
+},
+{
+  when: "November 23, 2018",
+  venue: "Wooly's in Des Moines, IA",
+  time: "8 pm",
+},
+{
+  when: "December 21, 2018",
+  venue: "Cabo San Lucas, Pier 3",
+  time: "6 pm",
+},
+{
+  when: "January 20, 2019",
+  venue: "Teatro Antico di Taormina in Taormina, Italy",
+  time: "8 pm",
+},
+{
+  when: "February 19, 2019",
+  venue: "Waldbühne in Berlin, Germany",
+  time: "8 pm",
+}
+];
+
+// JavaScript for Tour Dates
+const createTour = () => {
+  let newString = ''
+  for (let i = 0; i < tour.length; i++) {
+        newString += `<div class="tours">`
+          newString += `<h4>${tour[i].when}</h4>`
+          newString += `<h4>${tour[i].venue}</h4>`
+          newString += `<h4>${tour[i].time}</h4>`
+          newString += `</div>`;
+  }
+  printToDom(newString, 'tour__dates');
+};
+
+// JS for songs.html
 const albums = [
   {
     title: "Neptune & The Vainy-Armed Apprentice",
@@ -73,7 +128,7 @@ const albumBuilder = () => {
         newString += `Album Art: <img src=${albums[i].image}><br>`;
         newString += `Songs: ${albums[i].songs}<br>`;
         newString += `</div><br>`;
-      }else{
+      } else {
         newString += `<div class="odd">`;
         newString += `Title: ${albums[i].title}<br>`;
         newString += `Album Art: <img src=${albums[i].image}><br>`;
@@ -98,7 +153,7 @@ const createBandCards = () => {
   };
   printToDom(newString, 'bio__card');
 };
-  createBandCards();
-  albumBuilder();
 
-   
+    createBandCards();
+    albumBuilder();
+    createTour();

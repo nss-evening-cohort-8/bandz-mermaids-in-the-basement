@@ -171,12 +171,7 @@ const createBandCards = () => {
   showBio();
 };
 
-
-
 createBandCards();
 albumBuilder();
 createTour();
-
-
-
 

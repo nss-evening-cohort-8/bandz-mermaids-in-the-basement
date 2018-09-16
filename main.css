@@ -6,12 +6,6 @@ body {
        min-height: 100vh;  
        margin: 0px;
 }
-
-#pageContent{
-    margin:20px;  
-    min-height: 100vh;  
-    margin: 0px;
-}
 #container{
     flex: 1;  
     display: flex;
@@ -75,10 +69,14 @@ a {
     text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
-.tour {
-    flex: 100%;
-    flex-direction: column;
-    height: 600px;
+.tours {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.caption {
+    font-size: 12px;
 }
 
 /* CSS for Footer */
@@ -88,7 +86,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     background-color: aliceblue;
-
 }
 .footer_img{
     max-width: 30px;

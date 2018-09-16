@@ -178,6 +178,15 @@ a {
     font-family: 'Metal Mania', cursive;
 }
 
+.fave__header {
+    font-family: 'Metal Mania', cursive;
+    margin: 0;
+}
+
+.band__fave {
+    margin: 0;
+}
+
 #bio {
     text-align: center;
 }

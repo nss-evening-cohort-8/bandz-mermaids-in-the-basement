@@ -1,42 +1,3 @@
-// JS for band.html
-
-let band = [
-  {
-    name: 'Aegaeon',
-    image: 'https://orig00.deviantart.net/ab4b/f/2013/126/1/a/merman_by_annemaria48-d642or4.jpg',
-    bio: "Aegaeon sings loudly and proudly. He couldn't hit the key of the song if he tried, but DAY-UM, he's a looker. In his spare time Aegaeon enjoys long walks on the beach."
-  },
-
-  {
-    name: 'Ladon',
-    image: 'https://i.pinimg.com/originals/16/3d/95/163d95f8b269f47ee0cfca91934dff57.jpg',
-    bio: "Ladon plays bass. It's a good thing that a bass only has 4 strings, played one at a time, because Ladon is dumber than a box of rocks. In his spare time, Ladon enjoys long walks on the beach."
-  },
-
-  {
-    name: 'Nereus',
-    image: 'https://cache.desktopnexus.com/thumbseg/458/458642-bigthumbnail.jpg',
-    bio: "Nereus plays pan flute. He plays it poorly, but his mom's house has a basement were we can rehearse. In his spare time, Nereus enjoys long walks on the beach."
-  },
-
-  {
-    name: 'Pan',
-    image: 'https://i.warosu.org/data/tg/img/0294/29/1389487235150.png',
-    bio: 'Pan plays guitar. Loudly. Sometimes, when the spirit moves him, he smashes said guitar. In his spare time, Pan enjoys long walks on the beach.'
-  },
-
-  {
-    name: 'Triton',
-    image: 'https://ssl.c.photoshelter.com/img-get2/I0000Xu80bDWLL6c/fit=1000x750/Project-Mermaids-78.jpg',
-    bio: 'Triton is our keys player. His favortie piece is chopsticks. In his spare time, Triton enjoys long walks on the beach.'
-  },
-
-  {
-    name: 'Proteus',
-    image: 'http://mysticinvestigations.com/paranormal/wp-content/uploads/2013/08/merman1.jpg',
-    bio: "Proteus plays drums. Because he plays drums, we can't call him a musician, but we're glad he's in the band. In his spare time, Proteus enjoys long walks on the beach."
-  }
-];
 
 /* JS for Tour Page */
 const tour = [
@@ -74,6 +35,41 @@ const tour = [
   when: "February 19, 2019&nbsp&nbsp&nbsp&nbsp",
   venue: "Waldbühne in Berlin, Germany&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
+},
+{
+  when: "March 20, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
+},
+{
+  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
+},
+{
+  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
+},
+{
+  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
+},
+{
+  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
+},
+{
+  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
+},
+{
+  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
 }
 ];
 
@@ -109,6 +105,51 @@ const albums = [
   }
 ];
 
+// JS for band.html
+let band = [
+  {
+    name: 'Aegaeon',
+    image: 'https://orig00.deviantart.net/ab4b/f/2013/126/1/a/merman_by_annemaria48-d642or4.jpg',
+    bio: "Aegaeon sings loudly and proudly. He couldn't hit the key of the song if he tried, but DAY-UM, he's a looker. In his spare time Aegaeon enjoys long walks on the beach.",
+    fave: albums[0].songs[0]
+  },
+
+  {
+    name: 'Ladon',
+    image: 'https://i.pinimg.com/originals/16/3d/95/163d95f8b269f47ee0cfca91934dff57.jpg',
+    bio: "Ladon plays bass. It's a good thing that a bass only has 4 strings, played one at a time, because Ladon is dumber than a box of rocks. In his spare time, Ladon enjoys long walks on the beach.",
+    fave: albums[1].songs[2]
+  },
+
+  {
+    name: 'Nereus',
+    image: 'https://cache.desktopnexus.com/thumbseg/458/458642-bigthumbnail.jpg',
+    bio: "Nereus plays pan flute. He plays it poorly, but his mom's house has a basement were we can rehearse. In his spare time, Nereus enjoys long walks on the beach.",
+    fave: albums[2].songs[1]
+  },
+
+  {
+    name: 'Pan',
+    image: 'https://i.warosu.org/data/tg/img/0294/29/1389487235150.png',
+    bio: 'Pan plays guitar. Loudly. Sometimes, when the spirit moves him, he smashes said guitar. In his spare time, Pan enjoys long walks on the beach.',
+    fave: albums[0].songs[2]
+  },
+
+  {
+    name: 'Triton',
+    image: 'https://ssl.c.photoshelter.com/img-get2/I0000Xu80bDWLL6c/fit=1000x750/Project-Mermaids-78.jpg',
+    bio: 'Triton is our keys player. His favortie piece is chopsticks. In his spare time, Triton enjoys long walks on the beach.',
+    fave: albums[2].songs[1]
+  },
+
+  {
+    name: 'Proteus',
+    image: 'http://mysticinvestigations.com/paranormal/wp-content/uploads/2013/08/merman1.jpg',
+    bio: "Proteus plays drums. Because he plays drums, we can't call him a musician, but we're glad he's in the band. In his spare time, Proteus enjoys long walks on the beach.",
+    fave: albums[1].songs[1]
+  }
+];
+
 const printToDom = (stringToPrint, divId) => {
   let selectedDiv = document.getElementById(divId);
   if (selectedDiv !== null) {
@@ -120,20 +161,31 @@ const printToDom = (stringToPrint, divId) => {
 
 const albumBuilder = () => {
   let newString = "";
+  let songsList1 = albums[0].songs;
     for (i = 0; i < albums.length; i++) {
       items = albums.indexOf(albums[i]);
       if(items % 2 === 0) {
-        newString += `<div class="even">`;
-        newString += `Title: ${albums[i].title}<br>`;
-        newString += `Album Art: <img src=${albums[i].image}><br>`;
-        newString += `Songs: ${albums[i].songs}<br>`;
-        newString += `</div><br>`;
-      } else {
         newString += `<div class="odd">`;
-        newString += `Title: ${albums[i].title}<br>`;
-        newString += `Album Art: <img src=${albums[i].image}><br>`;
-        newString += `Songs: ${albums[i].songs}<br>`;
-        newString += `</div><br>`;
+        newString += `<div>`;
+        newString += `<div class="odd__titles">${albums[i].title}</div>`;
+        newString += `<h4 class="odd__songs">Songs</h4>`
+        for (j = 0; j < albums[i].songs.length; j++) {
+          newString += `<div class="odd__songs">${albums[i].songs[j]}</div>`;
+        }
+        newString += `</div>`;
+        newString += `<img class="odd__pic"src=${albums[i].image}>`;
+        newString += `</div>`;
+      }else{
+        newString += `<div class="even">`;
+        newString += `<div>`;
+        newString += `<div class="even__titles">${albums[i].title}</div>`;
+        newString += `<h4 class="even__songs">Songs</h4>`
+        for (j = 0; j < albums[i].songs.length; j++) {
+          newString += `<div class="even__songs">${albums[i].songs[j]}</div>`;
+        }
+        newString += `</div>`;
+        newString += `<img class="even__pic"src=${albums[i].image}>`;
+        newString += `</div>`;
       }
     }
     printToDom(newString, 'discography')
@@ -156,13 +208,14 @@ const showBio = () => {
 const createBandCards = () => {
   let newString = '';
   for (let i = 0; i < band.length; i++) {
-        newString += `<div class="member">`
+        newString  += `<div class="member">`
           newString += `<h3>${band[i].name}</h3>`
           newString += `<img class="band__image" src=${band[i].image}></img>`
           newString += `<div id='bio'>`
-          // newString += `<h5>Bio</h5>`
             newString +=`<div class="band__bio" style='display: none'>`
               newString += `<p>${band[i].bio}</p>`
+              newString += `<h5 class='fave__header'>Fave Deep Sea Jam</h5>`
+              newString+= `<div class='band__fave'>"${band[i].fave}"</div>`
             newString += `</div>` 
           newString += `</div>`     
         newString += `</div>`;

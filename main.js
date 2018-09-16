@@ -3,22 +3,22 @@
 const tour = [
 {
   when: "September 24, 2018&nbsp&nbsp&nbsp&nbsp",
-  venue: "Neptune's Grove&nbsp&nbsp&nbsp&nbsp",
+  venue: "Neptune's Grove in (Merfolk ONLY Conert Venue)&nbsp&nbsp&nbsp&nbsp",
   time: "6 pm",
 },
 {
   when: "October 24, 2018&nbsp&nbsp&nbsp&nbsp",
-  venue: "Athena's Temple&nbsp&nbsp&nbsp&nbsp",
+  venue: "Temple of Athena Nike in Athens Greece&nbsp&nbsp&nbsp&nbsp",
   time: "6 pm",
 },
 {
   when: "October 31, 2018&nbsp&nbsp&nbsp&nbsp",
-  venue: "Atlantis Colleseum&nbsp&nbsp&nbsp&nbsp",
+  venue: "Atlantis Colleseum in Atlantis, Atlantic Ocean&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
 },
 {
   when: "November 23, 2018&nbsp&nbsp&nbsp&nbsp",
-  venue: "Wooly's in Des Moines, IA&nbsp&nbsp&nbsp&nbsp",
+  venue: "Wooly's in Des Moines, Iowa&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
 },
 {
@@ -38,37 +38,37 @@ const tour = [
 },
 {
   when: "March 20, 2019&nbsp&nbsp&nbsp&nbsp",
-  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  venue: "Neptune's Seafood in Garden Grove, California&nbsp&nbsp&nbsp&nbsp",
+  time: "6 pm",
+},
+{
+  when: "April 19, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Pompeii, Naples, Italy&nbsp&nbsp&nbsp&nbsp",
+  time: "7 pm",
+},
+{
+  when: "May 18, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "The Laughing Parrot in Bonita Springs, Florida&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
 },
 {
-  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
-  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  when: "June 1, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Blizzard Beach Water Park at Walt Disney World in Buena Vista, Florida&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
 },
 {
-  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
-  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
-  time: "8 pm",
+  when: "June 16, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Bonaroo, Manchester, Tennessee&nbsp&nbsp&nbsp&nbsp",
+  time: "6 pm",
 },
 {
-  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
-  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
-  time: "8 pm",
+  when: "June 21, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Harbor Cove Hotel in Nassau, Bahamas&nbsp&nbsp&nbsp&nbsp",
+  time: "5 pm",
 },
 {
-  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
-  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
-  time: "8 pm",
-},
-{
-  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
-  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
-  time: "8 pm",
-},
-{
-  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
-  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
+  when: "July 16, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Civic Center in Amarillo, Texas&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
 }
 ];

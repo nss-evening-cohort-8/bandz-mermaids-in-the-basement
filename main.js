@@ -156,7 +156,7 @@ const showBio = () => {
 const createBandCards = () => {
   let newString = '';
   for (let i = 0; i < band.length; i++) {
-        newString += `<div class="member">`
+        newString  += `<div class="member">`
           newString += `<h3>${band[i].name}</h3>`
           newString += `<img class="band__image" src=${band[i].image}></img>`
           newString += `<div id='bio'>`

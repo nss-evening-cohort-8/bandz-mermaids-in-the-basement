@@ -1,16 +1,13 @@
 /*****************************************************************NAVIGATION***************************************************************/
 @import url('https://fonts.googleapis.com/css?family=Metal+Mania');
-
-body {
+/*******************************************************************Home Page BODY*****************************************************************/
+#home_body {
        display: flex;
        flex-direction: column; 
        min-height: 100vh;  
        margin: 0px;
        background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
 }
-/* body_container{
-    background-image: "https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg";
-} */
 #container{
     flex: 1;  
     display: flex;
@@ -49,19 +46,25 @@ a {
     font-family: 'Metal Mania', cursive;
     padding-left: 10px;
 }
+/* Home Page Content */
 .band_title {
     margin:30px;
     font-family: 'Metal Mania', cursive;
     font-size: 3em;
     color: azure;
-    padding-bottom: 0px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px azure;
+
+
 }
   
 #background{
     margin:auto;
 }
 #slide_img{
-    /* background-image: url('https://i.warosu.org/data/tg/img/0294/29/1389487235150.png'); */
     background-repeat: no-repeat;
     height: 400px;
     width: 700px; 

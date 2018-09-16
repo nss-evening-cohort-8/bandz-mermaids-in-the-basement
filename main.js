@@ -40,12 +40,11 @@ let band = [
 
 /* Home Page Slideshow*/
 let i=0;
-let images = ["https://i.warosu.org/data/tg/img/0294/29/1389487235150.png","https://i.pinimg.com/originals/16/3d/95/163d95f8b269f47ee0cfca91934dff57.jpg","https://cache.desktopnexus.com/thumbseg/458/458642-bigthumbnail.jpg"];
 let time = 3000;
 
 const changeImg = () => {
-  document.getElementById('slide_img').src = images[i];
-  if(i < images.length -1){
+  document.getElementById('slide_img').src =  band[i].image;
+  if(i < band.length -1){
     i++;
   }
     else {

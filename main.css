@@ -57,8 +57,6 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 5px 5px azure;
-
-
 }
   
 #background{
@@ -177,7 +175,6 @@ a {
     background-color: skyblue;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .even__pic {
@@ -221,7 +218,6 @@ a {
     font-family: 'Metal Mania', cursive;
     font-size: 40px;
     color: white;
-
 }
 
 .odd__songs{
@@ -229,7 +225,6 @@ a {
     font-family: 'Metal Mania', cursive;
     font-size: 40px;
     color: white;
-
 }
 
 /*****************************************************************FOOTER*****************************************************************/

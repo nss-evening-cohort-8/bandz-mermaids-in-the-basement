@@ -1,4 +1,21 @@
 
+/* Home Page Slideshow*/
+let i=0;
+let time = 3000;
+
+const changeImg = () => {
+  document.getElementById('slide_img').src =  band[i].image;
+  if(i < band.length -1){
+    i++;
+  }
+    else {
+    i = 0;
+    }
+    setTimeout("changeImg()", time);
+  }
+  window.onload = changeImg;
+
+
 /* JS for Tour Page */
 const tour = [
 {

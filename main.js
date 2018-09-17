@@ -20,7 +20,7 @@ const changeImg = () => {
 const tour = [
 {
   when: "September 24, 2018&nbsp&nbsp&nbsp&nbsp",
-  venue: "Neptune's Grove in (Merfolk ONLY Conert Venue)&nbsp&nbsp&nbsp&nbsp",
+  venue: "Neptune's Grove in (Merfolk ONLY Concert Venue)&nbsp&nbsp&nbsp&nbsp",
   time: "6 pm",
 },
 {

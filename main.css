@@ -7,6 +7,7 @@
        min-height: 100vh;  
        margin: 0px;
        background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
+       background-size: cover;
 }
 #container{
     flex: 1;  
@@ -46,6 +47,7 @@ a {
     font-family: 'Metal Mania', cursive;
     padding-left: 10px;
 }
+
 /* Home Page Content */
 .band_title {
     margin:30px;
@@ -57,8 +59,6 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 5px 5px azure;
-
-
 }
   
 #background{
@@ -71,10 +71,40 @@ a {
 }
 
 /* CSS for Tour Page */
+#tour__body {
+    position: relative;
+    margin: 0;
+    background-color: rgb(0, 166, 255);
+}
+#tour__body:after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: 0.5; 
+    z-index: -1;
+    background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
+    background-size: cover;
+    margin:0;
+}
+
+.flexon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 1em;
+    color: rgb(254, 246, 29);
+    -webkit-text-stroke: .5px black;
+}
+
 .tour__h1 {
     font-family: 'Metal Mania', cursive;
     text-align: center;
     font-size: 3em;
+    padding: 0;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
@@ -82,10 +112,73 @@ a {
     text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
-.tours {
+.tour__h6 {
+    font-family: 'Metal Mania', cursive;
+    text-align: center;
+    font-size: 1em;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+#tour_dates {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.tour__footer {
+    position: absolute;
+    bottom: 0px; 
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+    height:auto;
+}
+
+/* JS for eegg.html */
+#eegg__body {
+    position: relative;
+    margin: 0;
+    background-color: rgb(0, 166, 255);
+}
+#eegg__body:after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: 0.3; 
+    z-index: -1;
+    background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+.eegg__flexon {
+    display: flex;
+    text-align: left;
+    font-family: 'Metal Mania', cursive;
+    font-size: 1em;
+    margin: 10px;
+    color: rgb(254, 246, 29);
+    -webkit-text-stroke: .5px black;
+}
+
+.eegg__h1 {
+    font-family: 'Metal Mania', cursive;
+    text-align: center;
+    font-size: 3em;
+    padding: 0;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
 .caption {
@@ -101,12 +194,12 @@ a {
     flex-direction: row;
 }
 
-body {
+/* body {
     display: flex;
     flex-direction: column; 
     min-height: 50vh;
     background: url(https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg);  
-}
+} */
 
 /*******************************************************************DISCOGRAPHY*****************************************************************/
 
@@ -129,7 +222,6 @@ body {
     background-color: skyblue;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .even__pic {
@@ -173,7 +265,6 @@ body {
     font-family: 'Metal Mania', cursive;
     font-size: 40px;
     color: white;
-
 }
 
 .odd__songs{
@@ -181,7 +272,6 @@ body {
     font-family: 'Metal Mania', cursive;
     font-size: 40px;
     color: white;
-
 }
 
 /*****************************************************************FOOTER*****************************************************************/
@@ -303,6 +393,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 5px;
 }
+
+/* Media Settings for Site */
 
 @media (min-width:600px) {
     body {

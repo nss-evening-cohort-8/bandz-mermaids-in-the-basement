@@ -192,8 +192,7 @@ a {
     flex: 1;  
     display: flex;
     flex-direction: row;
-}
-  
+}  
 #songs__body {
     display: flex;
     flex-direction: column; 
@@ -235,15 +234,15 @@ a {
 }
 
 .discography {
-    font-family: 'Metal Mania', cursive;
     text-align: center;
+    font-family: 'Metal Mania', cursive;
     font-size: 3em;
-    padding: 0;
+    color: azure;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 5px 5px rgb(0, 0, 0);
+    text-shadow: 5px 5px azure;
 }
 
 /* #discography {

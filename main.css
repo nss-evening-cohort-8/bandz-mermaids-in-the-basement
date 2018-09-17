@@ -6,8 +6,21 @@
        flex-direction: column; 
        min-height: 100vh;  
        margin: 0px;
-       background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
        background-size: cover;
+       background-color: rgb(0, 166, 255);
+}
+#home_body:after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: 0.6; 
+    z-index: -1;
+    background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
+    background-size: cover;
+    margin:0;
 }
 #container{
     flex: 1;  
@@ -50,7 +63,6 @@ a {
 
 /* Home Page Content */
 .band_title {
-    margin:30px;
     font-family: 'Metal Mania', cursive;
     font-size: 3em;
     color: azure;
@@ -58,16 +70,20 @@ a {
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 5px 5px azure;
-}
-  
-#background{
+    text-shadow: 5px 5px black;
     margin:auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 #slide_img{
     background-repeat: no-repeat;
-    height: 400px;
-    width: 700px; 
+    max-width: 90%;
+   width: 400px;
+   height: 400px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 25px;
 }
 
 /* CSS for Tour Page */
@@ -83,7 +99,7 @@ a {
     left: 0;
     width: 100%; 
     height: 100%;  
-    opacity: 0.5; 
+    opacity: 0.5;
     z-index: -1;
     background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
     background-size: cover;
@@ -246,11 +262,6 @@ a {
     text-shadow: 5px 5px azure;
 }
 
-/* #discography {
-    text-align: center;
-    font-family: 'Metal Mania', cursive;
-} */
-
 .even__titles{
     text-align: center;
     font-family: 'Metal Mania', cursive;
@@ -309,7 +320,7 @@ a {
     left: 0;
     width: 100%; 
     height: 100%;  
-    opacity: .3; 
+    opacity: 0.8; 
     z-index: -1;
     background: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
     margin:0;
@@ -317,26 +328,28 @@ a {
 
 #band__title {
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
     font-family: 'Metal Mania', cursive;
-    text-shadow:
-		-1px -1px 0 rgb(245, 241, 241),
-		1px -1px 0 rgb(245, 241, 241),
-		-1px 1px 0 rgb(245, 241, 241),
-        1px 1px 0 rgb(245, 241, 241);
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px rgb(0, 0, 0);
     margin: 0;
 }
 
 #band__subtitle {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Metal Mania', cursive;
-    text-shadow:
-		-1px -1px 0 rgb(245, 241, 241),
-		1px -1px 0 rgb(245, 241, 241),
-		-1px 1px 0 rgb(245, 241, 241),
-        1px 1px 0 rgb(245, 241, 241);
-        margin: 0;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px rgb(0, 0, 0);
+    margin-bottom: 10px;
 }
 
 #top__image {
@@ -372,6 +385,7 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
 
 .member h3 {

@@ -82,11 +82,6 @@ const tour = [
   when: "June 21, 2019&nbsp&nbsp&nbsp&nbsp",
   venue: "Harbor Cove Hotel in Nassau, Bahamas&nbsp&nbsp&nbsp&nbsp",
   time: "5 pm",
-},
-{
-  when: "July 16, 2019&nbsp&nbsp&nbsp&nbsp",
-  venue: "Civic Center in Amarillo, Texas&nbsp&nbsp&nbsp&nbsp",
-  time: "8 pm",
 }
 ];
 

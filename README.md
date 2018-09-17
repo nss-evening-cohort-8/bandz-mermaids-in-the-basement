@@ -8,7 +8,7 @@ The exercise was to build a band webpage with each team member responsible for o
 
 ## Screenshots
 
-​![main screenshot](./img/homepage.png)
+​![main screenshot](./img/mitb-homepage.png)
 ​![second screenshot](./img/mitb-members-1.png)
 ​![third screenshot](./img/mitb-members-2.png)
 ​![fourth screenshot](./img/mitb-tour.png)

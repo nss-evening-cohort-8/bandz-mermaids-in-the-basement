@@ -19,38 +19,73 @@ const changeImg = () => {
 /* JS for Tour Page */
 const tour = [
 {
-  when: "September 24, 2018",
-  venue: "Neptune's Grove",
+  when: "September 24, 2018&nbsp&nbsp&nbsp&nbsp",
+  venue: "Neptune's Grove in (Merfolk ONLY Concert Venue)&nbsp&nbsp&nbsp&nbsp",
   time: "6 pm",
 },
 {
-  when: "October 24, 2018",
-  venue: "Athena's Temple",
+  when: "October 24, 2018&nbsp&nbsp&nbsp&nbsp",
+  venue: "Temple of Athena Nike in Athens Greece&nbsp&nbsp&nbsp&nbsp",
   time: "6 pm",
 },
 {
-  when: "October 31, 2018",
-  venue: "Atlantis Colleseum",
+  when: "October 31, 2018&nbsp&nbsp&nbsp&nbsp",
+  venue: "Atlantis Colleseum in Atlantis, Atlantic Ocean&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
 },
 {
-  when: "November 23, 2018",
-  venue: "Wooly's in Des Moines, IA",
+  when: "November 23, 2018&nbsp&nbsp&nbsp&nbsp",
+  venue: "Wooly's in Des Moines, Iowa&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
 },
 {
-  when: "December 21, 2018",
-  venue: "Cabo San Lucas, Pier 3",
+  when: "December 21, 2018&nbsp&nbsp&nbsp&nbsp",
+  venue: "Cabo San Lucas, Pier 3&nbsp&nbsp&nbsp&nbsp",
   time: "6 pm",
 },
 {
-  when: "January 20, 2019",
-  venue: "Teatro Antico di Taormina in Taormina, Italy",
+  when: "January 20, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Teatro Antico di Taormina in Taormina, Italy&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
 },
 {
-  when: "February 19, 2019",
-  venue: "Waldbühne in Berlin, Germany",
+  when: "February 19, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Waldbühne in Berlin, Germany&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
+},
+{
+  when: "March 20, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Neptune's Seafood in Garden Grove, California&nbsp&nbsp&nbsp&nbsp",
+  time: "6 pm",
+},
+{
+  when: "April 19, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Pompeii, Naples, Italy&nbsp&nbsp&nbsp&nbsp",
+  time: "7 pm",
+},
+{
+  when: "May 18, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "The Laughing Parrot in Bonita Springs, Florida&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
+},
+{
+  when: "June 1, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Blizzard Beach Water Park at Walt Disney World in Buena Vista, Florida&nbsp&nbsp&nbsp&nbsp",
+  time: "8 pm",
+},
+{
+  when: "June 16, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Bonaroo, Manchester, Tennessee&nbsp&nbsp&nbsp&nbsp",
+  time: "6 pm",
+},
+{
+  when: "June 21, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Harbor Cove Hotel in Nassau, Bahamas&nbsp&nbsp&nbsp&nbsp",
+  time: "5 pm",
+},
+{
+  when: "July 16, 2019&nbsp&nbsp&nbsp&nbsp",
+  venue: "Civic Center in Amarillo, Texas&nbsp&nbsp&nbsp&nbsp",
   time: "8 pm",
 }
 ];

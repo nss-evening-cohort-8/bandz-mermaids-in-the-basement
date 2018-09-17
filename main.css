@@ -83,7 +83,7 @@ a {
     left: 0;
     width: 100%; 
     height: 100%;  
-    opacity: 0.5; 
+    opacity: 0.5;
     z-index: -1;
     background-image: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
     background-size: cover;
@@ -245,11 +245,6 @@ a {
     text-shadow: 5px 5px azure;
 }
 
-/* #discography {
-    text-align: center;
-    font-family: 'Metal Mania', cursive;
-} */
-
 .even__titles{
     text-align: center;
     font-family: 'Metal Mania', cursive;
@@ -308,7 +303,7 @@ a {
     left: 0;
     width: 100%; 
     height: 100%;  
-    opacity: .3; 
+    opacity: 0.8; 
     z-index: -1;
     background: url("https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg");
     margin:0;
@@ -316,26 +311,28 @@ a {
 
 #band__title {
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
     font-family: 'Metal Mania', cursive;
-    text-shadow:
-		-1px -1px 0 rgb(245, 241, 241),
-		1px -1px 0 rgb(245, 241, 241),
-		-1px 1px 0 rgb(245, 241, 241),
-        1px 1px 0 rgb(245, 241, 241);
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px rgb(0, 0, 0);
     margin: 0;
 }
 
 #band__subtitle {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Metal Mania', cursive;
-    text-shadow:
-		-1px -1px 0 rgb(245, 241, 241),
-		1px -1px 0 rgb(245, 241, 241),
-		-1px 1px 0 rgb(245, 241, 241),
-        1px 1px 0 rgb(245, 241, 241);
-        margin: 0;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px rgb(0, 0, 0);
+    margin-bottom: 10px;
 }
 
 #top__image {
@@ -371,6 +368,7 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
 
 .member h3 {

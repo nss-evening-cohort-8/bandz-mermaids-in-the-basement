@@ -131,8 +131,11 @@ a {
 }
 
 .tour__footer {
-    position: absolute; bottom: 0px; left: 0;
+    /* position: absolute; */
+    bottom: 0px; 
+    left: 0;
     width: 100%;
+    marging: 20px;
     height:auto;
 }
 

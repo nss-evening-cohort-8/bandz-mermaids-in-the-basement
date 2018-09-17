@@ -47,6 +47,7 @@ a {
     font-family: 'Metal Mania', cursive;
     padding-left: 10px;
 }
+
 /* Home Page Content */
 .band_title {
     margin:30px;
@@ -389,6 +390,8 @@ a {
     font-family: 'Roboto', sans-serif;
     margin: 5px;
 }
+
+/* Media Settings for Site */
 
 @media (min-width:600px) {
     body {

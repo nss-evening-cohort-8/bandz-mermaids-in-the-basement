@@ -68,6 +68,7 @@ a {
     color: azure;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 5px 5px black;
@@ -123,6 +124,7 @@ a {
     padding: 0;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 5px 5px rgb(0, 0, 0);
@@ -136,6 +138,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 15px;
     background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 5px 5px rgb(0, 0, 0);
@@ -192,6 +195,7 @@ a {
     padding: 0;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 5px 5px rgb(0, 0, 0);
@@ -256,6 +260,7 @@ a {
     color: azure;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 5px 5px azure;

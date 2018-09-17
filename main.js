@@ -178,7 +178,6 @@ const printToDom = (stringToPrint, divId) => {
 
 const albumBuilder = () => {
   let newString = "";
-  let songsList1 = albums[0].songs;
     for (i = 0; i < albums.length; i++) {
       items = albums.indexOf(albums[i]);
       if(items % 2 === 0) {

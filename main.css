@@ -192,14 +192,13 @@ a {
     flex: 1;  
     display: flex;
     flex-direction: row;
-}
-
-/* body {
+}  
+#songs__body {
     display: flex;
     flex-direction: column; 
     min-height: 50vh;
     background: url(https://i.ytimg.com/vi/XDzT8zJN5Zs/maxresdefault.jpg);  
-} */
+}
 
 /*******************************************************************DISCOGRAPHY*****************************************************************/
 
@@ -237,8 +236,13 @@ a {
 .discography {
     text-align: center;
     font-family: 'Metal Mania', cursive;
-    font-size: 5em;
-    color: white;
+    font-size: 3em;
+    color: azure;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px azure;
 }
 
 .even__titles{
